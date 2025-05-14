@@ -1,14 +1,18 @@
 
-import './App.css'
-
+import UserLoginPage from './pages/authPages/UserLoginPage.jsx'
+import UserRegistrationPage from './pages/authPages/UserRegistrationPage.jsx'
+import Homepage from './pages/Homepage'
+import { Route, Routes } from 'react-router-dom'
 function App() {
  
 
   return (
     <>
-      <div>
-        HomePage
-      </div>
+      <Routes>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/login' element={<UserLoginPage/>}/>
+        <Route path='/Register' element={<UserRegistrationPage/>}/>
+      </Routes>
     </>
   )
 }

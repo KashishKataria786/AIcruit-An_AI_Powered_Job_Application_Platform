@@ -46,7 +46,7 @@ export const registerUser = async (req, res) => {
   }
 }
 
-//  Common Login API for Applicant and Recruitor based on role access
+//  Common Login API for Applicant and Recruitor based on role access~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body
